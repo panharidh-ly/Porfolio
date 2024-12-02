@@ -1,63 +1,68 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: black;
     background-image: url("Image/giphy.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    height:100vh;
+    height: 100vh;
 }
 
-header{
+header {
     background-color: black;
     padding: 15px;
 }
+
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end;  
+    justify-content: flex-end;
 }
+
 .menu li {
     margin-left: 5%;
-    margin-right:5%;
+    margin-right: 5%;
 }
+
 .menu a {
     text-decoration: none;
     color: white;
-
-}
-header a:hover{
-    color:grey;
 }
 
-main h1{
+header a:hover {
+    color: grey;
+}
+
+main h1 {
     font-size: 3cm;
     color: white;
-    display : flex;
+    display: flex;
     justify-content: center;
     padding-top: 10%;
-    cursor:help;
-
+    cursor: help;
 }
+
 .paragraphe {
     font-size: 1cm;
     color: white;
-    display : flex;
+    display: flex;
     justify-content: center;
     margin-top: 5%;
     cursor: help;
 }
+
 .paragraphe1 {
     font-size: 1cm;
     color: white;
-    display : flex;
+    display: flex;
     justify-content: center;
-    margin-bottom:5%;
+    margin-bottom: 5%;
     cursor: help;
 }
 
@@ -69,9 +74,10 @@ main h1{
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    cursor:grab;
-    margin:1%;
+    cursor: grab;
+    margin: 1%;
 }
+
 .pancarte:hover {
     transform: scale(1.05);
 }
@@ -81,21 +87,66 @@ main h1{
     height: auto;
 }
 
-footer{
-    position:fixed;
+/* Nouvelle section photo */
+.section-photo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#scrollToElon {
+    cursor: pointer;
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#scrollToElon:hover {
+    transform: scale(1.05);
+}
+
+/* Section d'Elon Musk */
+#elonMuskSection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.content h2 {
+    margin: 10px;
+    font-size: 24px;
+}
+
+/* Footer */
+footer {
+    position: fixed;
     background-color: black;
     padding: 5px;
     width: 100%;
-    position: fixed;
-    bottom:0;
-
-    img{
-        width: 35px;
-        height: 35px;
-        object-fit: contain;
-    }
+    bottom: 0;
 }
-.alignerlogo{
+
+footer img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.alignerlogo {
     display: flex;
     justify-content: space-around;
     align-items: center;
